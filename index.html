@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SHRAMIK APP</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+   
+</head>
+<body>
+    <header>
+        <nav class="container">
+            <div class="logo">SHRAMIK</div>
+            <div class="nav-links">
+                <a href="#">Home</a>
+                <a href="#">Services</a>
+            
+                <a href="#">About</a>
+                <a href="#" id="loginBtn">Login/Signup</a>
+
+                <!-- profile code -->
+                <img src="th.jpg" class="user-pic" onclick="togglemenu()">
+        
+        
+                <div class="sub-menu-wrap" id="sub-menu-wrap">
+                    <div class="sub-menu">
+                        <div class="user-info">
+                            <img src="th.jpg" >
+                            <h1>User Name</h1>
+                        </div>
+                        <hr>
+                        <a href="#" class="sub-menu-link"><img src="download.jpg"  height=30px>
+                        <p>Edit Profile</p>
+                        <span>></span>
+                        </a>
+        
+        
+                        <a href="#" class="sub-menu-link"><img src="setting.jpg"  height=30px>
+                        <p>Settings</p>
+                        <span>></span>
+                        </a>
+        
+                        <a href="#" class="sub-menu-link"><img src="help.jpg"  height=30px>
+                        <p>Help</p>
+                        <span>></span>
+                        </a>
+        
+                        <a href="#" class="sub-menu-link"><img src="logout.jpg"  height=30px>
+                        <p>Logout</p>
+                        <span>></span>
+                         </a>
+               
+                        </div>
+                    
+                </div>
+            </div>
+        </nav>
+    </header>
+<!-- content section -->
+    <main class="container">
+        <section class="hero">
+            <h1>SHRAMIK APP</h1>
+            <p>Easy to find top selling services</p>
+            <a href="#"  id="button"class="cta-button">Book Your Work Instantly</a>
+        </section>
+
+        <section class="services">
+            <div class="service-item">
+                <h3>Wall Paint</h3>
+                <p>Professional wall painting services</p>
+            </div>
+            <div class="service-item">
+                <h3>POP Design</h3>
+                <p>Custom POP designs for your home</p>
+            </div>
+            <div class="service-item">
+                <h3>Furniture Finishing</h3>
+                <p>Expert furniture finishing services</p>
+            </div>
+        
+        </section>
+
+       
+    </main>
+
+    <!-- login form -->
+
+    <div id="loginModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Login/Signup</h2>
+            <form id="userForm">
+                <input type="text" placeholder="Name" required>
+                <input type="email" placeholder="Email" required>
+                <input type="password" placeholder="Password" required>
+                <input type="number" placeholder="enter adhar-number">
+                <input type="text" placeholder="Ocuupation">
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </div>
+
+    <div id="thankYouModal" class="modal">
+        <div class="content">
+            <span class="close">&times;</span>
+            <h2>Thank You For Trying Out:</h2>
+            <h1>SHRAMIK APP</h1>
+            <p>Get Unlimited works with Small Monthly Fee starting at RS99/month or RS199/month with annual plan</p>
+            <p>You can use this app to get work for different categories or any other can hire you easily by using this app. No attribution required</p>
+
+        </div>
+    </div>
+
+<!-- our service-- -->
+    <div class="wrapper">
+        <h1>OUR-SERVICES</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        
+        <div class="content-box">
+            <div class="card">
+                <i class="bx bx-bar-chart-alt bx-md"></i>
+                <h2>Marketing Services</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia, esse eum! Nisi, dolore?Lorem ipsum dolor sit.</p>
+            </div>
+            <!--second service-->
+            <div class="card">
+                <i class="bx bx-laptop bx-md"></i>
+                <h2>Web Services</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia, esse eum! Nisi, dolore?Lorem ipsum dolor sit.</p>
+            </div>
+             <!--third service-->
+            <div class="card">
+                <i class="bx bx-line-chart bx-md"></i>
+                <h2>24/7 customer Services</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia, esse eum! Nisi, dolore?Lorem ipsum dolor sit.</p>
+            </div>
+             <!--fourth service-->
+            <div class="card">
+                
+                <i class='bx bxs-home bx-md'></i>
+                <h2>Home decor</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia, esse eum! Nisi, dolore?Lorem ipsum dolor sit.</p>
+            </div>
+             <!--fifth service-->
+            <div class="card">
+                <i class='bx bx-walk bx-md'></i>
+                <h2>Wall Paint</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia, esse eum! Nisi, dolore?Lorem ipsum dolor sit.</p>
+            </div>
+            <!--Sixth service-->
+            <div class="card">
+                <i class="bx bx-paint bx-md"></i>
+                <h2>Creative consultancy</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia, esse eum! Nisi, dolore?Lorem ipsum dolor sit.</p>
+            </div>
+        </div>
+
+        <!-- footer part -->
+        <footer>
+            <div class="footerContainer">
+                <div class="socialicons">
+                    <a href="https://www.facebook.com/" target="_self"><i class="fa-brands fa-facebook"></i></a>
+                    <a href=""><i class="fa-brands fa-instagram"></i></a>
+                    <a href=""><i class="fa-brands fa-twitter"></i></a>
+                    <a href=""><i class="fa-brands fa-google-plus"></i></a>
+                    <a href=""><i class="fa-brands fa-youtube"></i></a>
+                </div>
+        
+                <div class="footerNav">
+                    <ul>
+                        <li><a href="">Home</a></li>
+                        <li><a href="">News</a></li>
+                        <li><a href="">About us</a></li>
+                        <li><a href="">contact us</a></li>
+                        <li><a href="">Our team</a></li>
+                       
+                    </ul>
+                </div>
+                
+        
+            </div>
+            <div class="footerBottom">
+                <p>Copyright &copy;2024;Designed by <span class="designer">Virat</span></p>
+            </div>
+        
+            </footer>
+    
+    
+
+   <script src="script.js"></script>
+</body>
+</html>
